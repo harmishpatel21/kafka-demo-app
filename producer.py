@@ -15,7 +15,7 @@ producer = KafkaProducer(bootstrap_servers=['localhost:9092'],
                         # partitioner=get_partition)
 
 if __name__ == "__main__":
-    while 1 == 1:
+    while True:
         registered_user = get_registered_user()
         print(registered_user)
         producer.send("registered_user", registered_user)

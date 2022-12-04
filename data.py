@@ -1,6 +1,6 @@
-from faker import Faker
+from faker import Faker ## faker library to generate fake data
 
-fake = Faker()
+fake = Faker() ## faker object
 
 def get_registered_user():
     return {
